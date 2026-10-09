@@ -1,0 +1,5 @@
+# Only contact.php is public in this folder
+Options -Indexes
+<FilesMatch "^(config\.php|.*\.log|.*\.json)$">
+  Require all denied
+</FilesMatch>

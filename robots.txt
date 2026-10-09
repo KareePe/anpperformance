@@ -1,0 +1,11 @@
+# ANP Performance
+User-agent: *
+Allow: /
+
+# working folders — should not be uploaded to the live server at all
+Disallow: /1/
+Disallow: /2/
+Disallow: /backup/
+Disallow: /bref/
+
+Sitemap: https://anpperformance.com/sitemap.xml

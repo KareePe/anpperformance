@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>ANP Performance</title>
+  <rect width="64" height="64" rx="14" fill="#0b0b0d"/>
+  <!-- italic "N" from the ANP logo -->
+  <g transform="translate(7.5 0) skewX(-14)" fill="#e10600">
+    <rect x="17" y="13" width="9" height="34"/>
+    <rect x="38" y="13" width="9" height="34"/>
+    <polygon points="17,13 27,13 47,47 37,47"/>
+  </g>
+  <!-- "PERFORMANCE" underline -->
+  <rect x="14" y="52" width="36" height="3" rx="1.5" fill="#f4f3f1"/>
+</svg>
