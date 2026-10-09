@@ -11,3 +11,7 @@
 # original videos — the site only uses the encoded clips in assets/vdo/hero/
 # (hero-poster-desktop.jpg in assets/vdo/ is used by the page, so only *.mp4 is ignored here)
 /assets/vdo/*.mp4
+404.html
+firebase.json
+.firebaserc
+.firebase/hosting..cache
