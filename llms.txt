@@ -1,6 +1,6 @@
 # ANP Performance
 
-> ANP Performance คืออู่แต่งรถยุโรปครบวงจรในประเทศไทย (European Car Performance Specialist) ประสบการณ์กว่า 8 ปี เชี่ยวชาญ Audi, Volkswagen, Mercedes-Benz, BMW และรองรับ Nissan GT-R (R35)
+> ANP Performance คืออู่แต่งรถยุโรปครบวงจรในประเทศไทย (European Car Performance Specialist) ประสบการณ์กว่า 8 ปี เชี่ยวชาญ Audi, Volkswagen, Mercedes-Benz, BMW, Porsche, Lamborghini และรองรับ Nissan GT-R (R35)
 
 ## บริการ
 - Performance Modification: โมดิฟายตั้งแต่ Stage 1 - Stage X เพิ่มแรงม้า เพิ่มแรงบิด
@@ -16,6 +16,17 @@
 - Facebook: https://www.facebook.com/anpperformance24
 - YouTube: https://www.youtube.com/@ANPPerformance42
 - Instagram: https://www.instagram.com/anpperformance24/
+- TikTok: https://www.tiktok.com/@anpperformance
+- WhatsApp: +66 61 442 2242
+
+## คำถามที่พบบ่อย
+- ANP Performance คืออะไร? อู่แต่งรถยุโรปครบวงจรในประเทศไทย ประสบการณ์กว่า 8 ปี ให้บริการ Custom Tune ECU & TCU, โมดิฟาย Stage 1 - Stage X, Service & Maintenance, Diagnostic ตรงรุ่น และ Performance Parts
+- รับทำรถยี่ห้ออะไรบ้าง? Audi, Volkswagen, Mercedes-Benz, BMW, Porsche, Lamborghini และรองรับ Nissan GT-R (R35)
+- ECU และ TCU คืออะไร? ECU คือกล่องควบคุมเครื่องยนต์ (จ่ายน้ำมัน จุดระเบิด บูสต์) TCU คือกล่องควบคุมเกียร์อัตโนมัติ การจูนคือปรับค่าเหล่านี้ให้เหมาะกับรถและการใช้งาน
+- Custom Tune ต่างจากไฟล์สำเร็จรูปอย่างไร? ออกแบบตามรถแต่ละคัน จากรุ่นรถ เครื่องยนต์ Hardware ที่ติดตั้ง และเป้าหมายของเจ้าของรถ
+- ขั้นตอน Custom Tune: CHECK ตรวจรถและ Hardware → DIAGNOSE ตรวจข้อมูลและระบบ → CUSTOM วางแนวทางจูน → TUNE จูน → CHECK ตรวจหลังจูน
+- Stage 1 - Stage X คืออะไร? ระดับการโมดิฟายเพื่อเพิ่มแรงม้าและแรงบิด Stage สูงขึ้นอัปเกรดชิ้นส่วนมากขึ้น ทีมงานประเมินจากรถและเป้าหมายก่อนเริ่มงาน
+- ติดต่อ / จองคิว: โทร 061-442-2242, LINE @anpperformance, อีเมล หรือแบบฟอร์มบนเว็บไซต์
 
 ## หน้าเว็บ
 - [หน้าแรก](https://anpperformance.com/): บริการ ผลงาน รีวิว คำถามที่พบบ่อย และช่องทางติดต่อ

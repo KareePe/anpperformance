@@ -122,7 +122,7 @@ if ($fh && flock($fh, LOCK_EX)) {
 }
 
 // ---------- validate ----------
-$brands = ['Audi', 'Volkswagen', 'Mercedes-Benz', 'BMW', 'Nissan GT-R', 'อื่นๆ'];
+$brands = ['Audi', 'Volkswagen', 'Mercedes-Benz', 'BMW', 'Porsche', 'Lamborghini', 'Nissan GT-R', 'อื่นๆ'];
 $years  = ['2024–2026', '2019–2023', '2014–2018', 'ก่อน 2014'];
 $needsAllowed = ['Stage / Performance', 'ECU Tune', 'TCU Tune', 'Diagnostic', 'Service', 'Performance Parts', 'อื่นๆ'];
 

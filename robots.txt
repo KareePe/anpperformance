@@ -1,8 +1,23 @@
 # ANP Performance
+# working folders (/1/ /2/ /backup/ /bref/) should not be uploaded to the live server at all
+
 User-agent: *
 Allow: /
+Disallow: /1/
+Disallow: /2/
+Disallow: /backup/
+Disallow: /bref/
 
-# working folders — should not be uploaded to the live server at all
+# AI search / answer engines — explicitly welcome
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Allow: /
 Disallow: /1/
 Disallow: /2/
 Disallow: /backup/

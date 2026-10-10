@@ -244,6 +244,20 @@
     });
   });
 
+  /* ---------- Sticky CTA bar ---------- */
+  // Hidden while the hero (which has its own call / LINE buttons) is on screen,
+  // slides up once the visitor has scrolled past it.
+  var stickyBar = document.querySelector('.sticky-bar');
+  var hero = document.getElementById('top');
+  if (stickyBar && hero && 'IntersectionObserver' in window) {
+    stickyBar.classList.add('is-hidden');
+    new IntersectionObserver(function (entries) {
+      var e = entries[0];
+      var passed = !e.isIntersecting && e.boundingClientRect.top < 0;
+      stickyBar.classList.toggle('is-hidden', !passed);
+    }).observe(hero);
+  }
+
   /* ---------- Gallery lightbox ---------- */
   // Clicking a work photo opens <dialog id="lightbox"> with every image in assets/,
   // starting at the clicked one. Arrows / keyboard / swipe / thumbnails to navigate.
