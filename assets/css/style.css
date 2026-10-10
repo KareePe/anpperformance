@@ -302,11 +302,24 @@ input::placeholder, textarea::placeholder { color: #9a9ca1; }
 }
 .cta-big small { font-size: 13px; }
 .cta-big strong { font: 700 24px var(--font-head); white-space: nowrap; }
-.cta-big--red { background: var(--red); box-shadow: 0 8px 24px rgba(225, 6, 0, .35); }
-.cta-big--red:hover { background: var(--red-hover); color: #fff; }
-.cta-big--line { background: var(--line); }
+.cta-big--red {
+  background: rgba(225, 6, 0, .7);
+  border: 2px solid var(--red);
+  box-shadow: 0 8px 24px rgba(225, 6, 0, .35);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  transition: background .2s;
+}
+.cta-big--red:hover { background: rgba(225, 6, 0, .9); color: #fff; }
+.cta-big--line {
+  background: rgba(6, 199, 85, .7);
+  border: 2px solid var(--line);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  transition: background .2s;
+}
 .cta-big--line strong { font-size: 20px; }
-.cta-big--line:hover { color: #fff; filter: brightness(1.08); }
+.cta-big--line:hover { background: rgba(6, 199, 85, .9); color: #fff; }
 /* Hero CTA "idle rumble": engine idling (short shake + exhaust glow every 3s),
    throttle blip on hover/tap. Uses `translate`/`scale` so it doesn't fight AOS transforms. */
 .cta-big--red { --glow: rgba(225, 6, 0, .85); --base-shadow: 0 8px 24px rgba(225, 6, 0, .35); }
@@ -545,7 +558,6 @@ input::placeholder, textarea::placeholder { color: #9a9ca1; }
 .brand-logo--vw { --logo: url('../img/brands/volkswagen.svg'); }
 .brand-logo--mercedes { --logo: url('../img/brands/mercedes.svg'); }
 .brand-logo--bmw { --logo: url('../img/brands/bmw.svg'); }
-.brand-logo--porsche { --logo: url('../img/brands/porsche.svg'); }
 .brand-logo--lamborghini { --logo: url('../img/brands/lamborghini.svg'); }
 .brand-logo--nissan { --logo: url('../img/brands/nissan.svg'); }
 .brand-name { font: 500 13px var(--font-body); color: #e8e8e6; text-align: center; white-space: nowrap; }
@@ -659,7 +671,7 @@ input::placeholder, textarea::placeholder { color: #9a9ca1; }
 }
 @media (max-width: 719px) {
   .euro-spec-head h2 { font-size: 24px; }
-  .brand-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px 6px; }
+  .brand-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px 6px; }
   .brand { width: auto; }
   .brand-logo { width: 46px; height: 46px; }
   .brand-logo--audi { width: 60px; }
@@ -1064,7 +1076,6 @@ textarea.field { resize: vertical; }
 .si-fb { --u: url('../img/social/facebook.svg'); }
 .si-ig { --u: url('../img/social/instagram.svg'); }
 .si-yt { --u: url('../img/social/youtube.svg'); }
-.si-tt { --u: url('../img/social/tiktok.svg'); }
 .si-line { --u: url('../img/social/line.svg'); }
 .si-wa { --u: url('../img/social/whatsapp.svg'); }
 /* socials: icon-only circles */
@@ -1083,7 +1094,6 @@ textarea.field { resize: vertical; }
 .contact-social--fb { background: #1877f2; }
 .contact-social--ig { background: linear-gradient(45deg, #f9a825, #e1306c 50%, #833ab4); }
 .contact-social--yt { background: #ff0000; }
-.contact-social--tt { background: #25262b; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .15); }
 .contact-social--wa { background: #25d366; }
 /* email + website */
 .contact-info { margin-top: 18px; display: grid; gap: 8px; font-size: 13.5px; }
@@ -1214,8 +1224,13 @@ textarea.field { resize: vertical; }
 .sticky-bar .si { width: 18px; height: 18px; }
 .sticky-call { background: var(--red); }
 .sticky-bar .sticky-call:hover { background: var(--red-hover); }
-.sticky-line .si { color: var(--line); }
+.sticky-line { background: var(--line); }
+.sticky-bar .sticky-line:hover { background: var(--line); filter: brightness(1.08); }
+.sticky-line .si { color: #fff; }
 .sticky-yt .si { color: #ff0000; }
+.sticky-txt { display: flex; flex-direction: column; min-width: 0; line-height: 1.15; }
+.sticky-txt b { font-weight: 600; }
+.sticky-txt small { font: 400 11px var(--font-body); opacity: .85; overflow: hidden; text-overflow: ellipsis; }
 }
 
 
@@ -1268,10 +1283,12 @@ textarea.field { resize: vertical; }
   .hero-tags span:not(.sep)::before { content: '•'; color: var(--red); margin-right: 6px; }
   .pill { padding: 5px 12px; font-size: 12px; }
   .hero-badge { font-size: 14px; padding-top: 8px; padding-bottom: 8px; }
-  .hero-ctas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5em), 1fr)); gap: 10px; }
-  .cta-big { padding: 10px 14px; border-radius: 10px; }
+  /* wrap by content, not a fixed column width: if the text renders wider (Android font
+     size / zoom settings, fallback fonts), the buttons stack instead of overflowing */
+  .hero-ctas { gap: 10px; }
+  .cta-big { flex: 1 1 auto; padding: 10px 14px; border-radius: 10px; }
   .cta-big strong { font-size: 18px; }
-  .cta-big--line strong { font-size: 15px; white-space: normal; overflow-wrap: anywhere; }
+  .cta-big--line strong { font-size: 15px; }
 
   /* Stats: 2 columns, last one full width */
   .stats-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 9em), 1fr)); gap: 14px 12px; padding-top: 18px; padding-bottom: 18px; }
@@ -1394,11 +1411,17 @@ textarea.field { resize: vertical; }
 
   /* Sticky bar */
   .sticky-bar a { font-size: 14px; padding: 12px 4px; }
+  .sticky-bar .sticky-call, .sticky-bar .sticky-line { gap: 5px; padding-top: 8px; padding-bottom: 8px; }
+  .sticky-txt small { font-size: 10px; }
+}
+
+/* Small phones: stack the hero CTAs */
+@media (max-width: 480px) {
+  .hero-ctas { flex-direction: column; }
 }
 
 /* Very small phones */
 @media (max-width: 359px) {
-  .hero-ctas { grid-template-columns: 1fr; }
   .brand-list { grid-template-columns: repeat(3, 1fr); }
   .why-grid { grid-template-columns: 1fr; }
 }
