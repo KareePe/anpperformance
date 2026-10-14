@@ -21,3 +21,6 @@ anpperformance-d920f.web.app-20261014T113759.json
 .dev.vars
 .wrangler/
 flex.json
+
+# Cloudflare Pages build output (scripts/build.sh)
+/dist/
