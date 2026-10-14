@@ -462,8 +462,8 @@
   /* ---------- Contact form ---------- */
   var form = document.getElementById('contact-form');
   if (form) {
-    // Sends to api/contact.php, which pushes a message to the shop's LINE OA
-    // (or logs it to api/storage/line-mock.log while no LINE token is configured).
+    // Sends to /api/contact (functions/api/contact.js), which pushes a message to the shop's LINE OA
+    // (or only logs it in the Function log while no LINE token is configured).
     var fields = form.querySelector('.form-fields');
     var thanks = form.querySelector('.form-thanks');
     var errorBox = form.querySelector('.form-error');
@@ -527,7 +527,7 @@
         })
         .then(function (data) {
           if (data && data.ok) {
-            if (data.mock && window.console) console.info('[contact form] MOCK mode — saved to api/storage/line-mock.log, not sent to LINE');
+            if (data.mock && window.console) console.info('[contact form] MOCK mode — logged by the Function, not sent to LINE');
             fields.hidden = true;
             thanks.hidden = false;
             thanks.querySelector('.link-btn').focus();

@@ -16,3 +16,8 @@ firebase.json
 .firebaserc
 .firebase/hosting..cache
 anpperformance-d920f.web.app-20261014T113759.json
+
+# Cloudflare local secrets
+.dev.vars
+.wrangler/
+flex.json
