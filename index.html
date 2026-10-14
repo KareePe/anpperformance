@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Primary SEO -->
-    <title>
-      อู่แต่งรถยุโรป จูน ECU/TCU Audi BMW Benz | ANP Performance
-    </title>
+    <title>อู่แต่งรถยุโรป จูน ECU/TCU Audi BMW Benz | ANP Performance</title>
     <meta
       name="description"
       content="อู่แต่งรถยุโรปครบวงจร ประสบการณ์ 8 ปี+ รับ Custom Tune ECU &amp; TCU โมดิฟาย Stage 1 - Stage X เซอร์วิส Diagnostic ตรงรุ่น Audi VW Benz BMW Lamborghini โทร 061-442-2242"
@@ -92,14 +90,20 @@
       href="assets/vdo/hero-poster-desktop.jpg"
       fetchpriority="high"
     />
+    <!-- Third-party CSS loads without blocking first paint (media="print" → "all" once loaded);
+         the preloader covers the page meanwhile -->
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700;1,800;1,900&family=Prompt:wght@300;400;500;600&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
     <!-- icon font subset to the 17 icons used (~4 KB instead of ~350 KB) — add names here if you use a new icon -->
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&icon_names=add,arrow_upward,call,check_circle,chevron_left,chevron_right,close,handshake,language,mail,memory,menu,monitoring,public,settings,speed,troubleshoot,verified_user,water_drop,zoom_in&display=block"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
     <link
       rel="stylesheet"
@@ -107,8 +111,20 @@
       integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+      media="print"
+      onload="this.media='all'"
     />
-    <link rel="stylesheet" href="assets/css/style.css?v=2" />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700;1,800;1,900&family=Prompt:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&icon_names=add,arrow_upward,call,check_circle,chevron_left,chevron_right,close,handshake,language,mail,memory,menu,monitoring,public,settings,speed,troubleshoot,verified_user,water_drop,zoom_in&display=block"
+        rel="stylesheet"
+      />
+    </noscript>
+    <link rel="stylesheet" href="assets/css/style.css?v=7" />
 
     <!-- Structured data (JSON-LD) -->
     <script type="application/ld+json">
@@ -126,8 +142,10 @@
             "logo": "https://anpperformance.com/assets/img/icon-512.png",
             "image": [
               "https://anpperformance.com/assets/img/og-image.jpg",
-              "https://anpperformance.com/assets/614817_0.jpg",
-              "https://anpperformance.com/assets/614829_0.jpg"
+              "https://anpperformance.com/assets/portfolio/34646_0.jpg",
+              "https://anpperformance.com/assets/portfolio/34649_0.jpg",
+              "https://anpperformance.com/assets/portfolio/34653_0.jpg",
+              "https://anpperformance.com/assets/parts/621368_0.jpg"
             ],
             "telephone": "+66614422242",
             "email": ["info@anpperformance.com", "anpperformance24@gmail.com"],
@@ -145,6 +163,10 @@
               "ECU tuning",
               "TCU tuning",
               "Performance modification",
+              "Dyno tuning",
+              "Turbo upgrade",
+              "Carbon intake",
+              "Ignition coil",
               "Car diagnostics"
             ],
             "contactPoint": {
@@ -212,7 +234,13 @@
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Performance Parts",
-                    "description": "จัดหาอะไหล่และของแต่ง Performance จากต่างประเทศ",
+                    "description": "ของแต่งแบรนด์ ANP Performance เช่น เทอร์โบ ชุดอินเทคคาร์บอน คอยล์จุดระเบิด และชุด Oil Catch Can รวมถึงจัดหาอะไหล่และของแต่ง Performance จากต่างประเทศ",
+                    "image": [
+                      "https://anpperformance.com/assets/parts/621368_0.jpg",
+                      "https://anpperformance.com/assets/parts/621307_0.jpg",
+                      "https://anpperformance.com/assets/parts/621319.jpg",
+                      "https://anpperformance.com/assets/parts/621301_0.jpg"
+                    ],
                     "provider": {
                       "@id": "https://anpperformance.com/#business"
                     }
@@ -316,12 +344,60 @@
               },
               {
                 "@type": "Question",
+                "name": "ANP Performance มีของแต่ง Performance Parts อะไรบ้าง?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "มีของแต่งแบรนด์ ANP Performance เช่น เทอร์โบ (Turbo), ชุดอินเทคคาร์บอน (Carbon Intake) และคอยล์จุดระเบิด (Ignition Coil) รวมถึงชุด Oil Catch Can และจัดหาอะไหล่ Performance จากต่างประเทศตามรุ่นรถ"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "มีผลงานจริงให้ดูไหม?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "มี ดูได้ที่ส่วน “ผลงานจาก ANP Performance” บนหน้านี้ ตัวอย่างเช่น Audi TT RS, Audi R8, Audi RS4 Avant, BMW M3, VW Scirocco R และ Mercedes-Benz C-Class ทั้งงานจูนบนไดโน่ งานติดตั้งของแต่ง และงานเซอร์วิส"
+                }
+              },
+              {
+                "@type": "Question",
                 "name": "ติดต่อหรือจองคิวกับ ANP Performance ได้อย่างไร?",
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "โทร 061-442-2242, แอดไลน์ผ่าน LINE Official Account ของร้าน, อีเมล info@anpperformance.com หรือ anpperformance24@gmail.com หรือกรอกแบบฟอร์มประเมินเบื้องต้นบนเว็บไซต์ แล้วทีมงานจะติดต่อกลับ"
                 }
               }
+            ]
+          },
+          {
+            "@type": "ImageGallery",
+            "@id": "https://anpperformance.com/#works",
+            "url": "https://anpperformance.com/#works",
+            "name": "ผลงานจาก ANP Performance",
+            "description": "รถจริง งานจริง ผลลัพธ์จริง — ผลงานจูน โมดิฟาย และเซอร์วิสรถยุโรปของ ANP Performance",
+            "inLanguage": "th-TH",
+            "isPartOf": { "@id": "https://anpperformance.com/#webpage" },
+            "author": { "@id": "https://anpperformance.com/#business" },
+            "image": [
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34646_0.jpg", "caption": "Audi TT ทีม ANP Performance ในสนามแข่ง" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34644_0.jpg", "caption": "BMW M3 สีเทา ในอู่ ANP Performance" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34649_0.jpg", "caption": "ห้องเครื่อง Audi TT RS พร้อมชุดอินเทคคาร์บอน" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34645_0.jpg", "caption": "VW Scirocco R บนไดโน่" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34647_0.jpg", "caption": "Service Audi TT MK3" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34643_0.jpg", "caption": "Audi TT RS ระหว่างติดตั้งอินเทค" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34648_0.jpg", "caption": "Audi TT RS สีแดง ระหว่างเซอร์วิส" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34652_0.jpg", "caption": "Audi TT RS สีแดง บนไดโน่" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34650_0.jpg", "caption": "Mercedes-Benz C-Class เปลี่ยนคอยล์จุดระเบิด" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34653_0.jpg", "caption": "Audi R8 บนไดโน่" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34656_0.jpg", "caption": "เปลี่ยนน้ำมันเกียร์ ATF รถบนลิฟต์" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34654_0.jpg", "caption": "ห้องเครื่อง Audi TT RS สีแดง ในห้องจูน" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34651_0.jpg", "caption": "Audi A5 สีขาว ชุดแต่งรอบคัน" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34658_0.jpg", "caption": "Audi RS4 Avant บนไดโน่" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34659_0.jpg", "caption": "น้ำมันเครื่องและอะไหล่เซอร์วิส Audi" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34655_0.jpg", "caption": "Audi RS สีเทา บนไดโน่" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34657_0.jpg", "caption": "น้ำมันเกียร์ Torco ATF เตรียมเซอร์วิส" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34662_0.jpg", "caption": "Audi TT สีขาว เครื่องโมดิฟาย บนไดโน่" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34660_0.jpg", "caption": "ชุดน้ำมันเซอร์วิส Audi" },
+              { "@type": "ImageObject", "contentUrl": "https://anpperformance.com/assets/portfolio/34661_0.jpg", "caption": "Audi บนลิฟต์ พร้อมอุปกรณ์เซอร์วิส" }
             ]
           }
         ]
@@ -333,7 +409,7 @@
     <div class="preloader" role="status" aria-label="กำลังโหลด">
       <div class="preloader-inner">
         <img
-          src="assets/img/logo-t.png"
+          src="assets/img/logo-t-168.png"
           alt="ANP Performance"
           class="logo-img"
           width="480"
@@ -348,7 +424,7 @@
       <div class="container header-bar">
         <a href="#top" class="logo" aria-label="ANP Performance">
           <img
-            src="assets/img/logo-t.png"
+            src="assets/img/logo-t-168.png"
             alt=""
             class="logo-img"
             width="480"
@@ -405,8 +481,8 @@
         class="hero-video-bg hero-playlist"
         data-mode="all"
         data-playlist='[
-    {"src": "assets/vdo/hero/Audi_B9.mp4", "o": "l"},
-    {"src": "assets/vdo/hero/A4_Story.mp4", "o": "p"}
+    {"src": "assets/vdo/hero/Audi_B9-720.mp4", "o": "l"},
+    {"src": "assets/vdo/hero/A4_Story-720.mp4", "o": "p"}
   ]'
       >
         <video
@@ -451,18 +527,20 @@
             ><span class="pill">Lamborghini</span>
           </div>
           <div class="hero-badge" data-aos="race-right" data-aos-delay="200">
-            อู่โมดิฟาย Audi ที่แรงและเร็วที่สุดในประเทศไทย
+            อู่โมดิฟาย Audi & Volkswagen อันดับ 1 ของประเทศไทย
           </div>
           <div class="hero-ctas" data-aos="fade-up" data-aos-delay="250">
             <a href="tel:0614422242" class="cta-big cta-big--red cta-rumble"
-              ><small>อยากจูนรถยุโรป? โทรเลย</small><strong>061-442-2242</strong></a
+              ><small>อยากจูนรถยุโรป? โทรเลย</small
+              ><strong>061-442-2242</strong></a
             >
             <a
               href="https://lin.ee/WOJdv9m"
               class="cta-big cta-big--line cta-rumble"
               target="_blank"
               rel="noopener"
-              ><small>ปรึกษาเรื่องรถยุโรปฟรี</small><strong>LINE Official</strong></a
+              ><small>ปรึกษาเรื่องรถยุโรปฟรี</small
+              ><strong>LINE Official</strong></a
             >
           </div>
         </div>
@@ -526,7 +604,7 @@
       <div class="exp-media">
         <img
           class="cover"
-          src="assets/614829_0.jpg"
+          src="assets/web/614829_0.jpg"
           alt="Audi RS6 ในห้องจูน"
           loading="lazy"
           width="1342"
@@ -543,7 +621,9 @@
         </div>
       </div>
       <div class="trust">
-        <h2 data-aos="fade-up">มั่นใจได้กับ <span class="red">ANP Performance</span></h2>
+        <h2 data-aos="fade-up">
+          มั่นใจได้กับ <span class="red">ANP Performance</span>
+        </h2>
         <div class="trust-item" data-aos="race-left">
           <span class="trust-icon"><span class="ms">public</span></span>
           <p>จัดหาอะไหล่จากต่างประเทศ รวดเร็ว ทันใจ</p>
@@ -623,37 +703,37 @@
           data-aos-delay="100"
           data-interval="2800"
           data-images='[
-      "assets/611733_0.jpg",
-      "assets/611734_0.jpg",
-      "assets/614810_0.jpg",
-      "assets/614812_0.jpg",
-      "assets/614813_0.jpg",
-      "assets/614814_0.jpg",
-      "assets/614815_0.jpg",
-      "assets/614816_0.jpg",
-      "assets/614817_0.jpg",
-      "assets/614818_0.jpg",
-      "assets/614819_0.jpg",
-      "assets/614820_0.jpg",
-      "assets/614821_0.jpg",
-      "assets/614822_0.jpg",
-      "assets/614823_0.jpg",
-      "assets/614824_0.jpg",
-      "assets/614825_0.jpg",
-      "assets/614826_0.jpg",
-      "assets/614827_0.jpg",
-      "assets/614828_0.jpg",
-      "assets/614829_0.jpg",
-      "assets/614830_0.jpg",
-      "assets/614831_0.jpg",
-      "assets/614832_0.jpg",
-      "assets/614833_0.jpg",
-      "assets/614834_0.jpg"
+      "assets/web/611733_0.jpg",
+      "assets/web/611734_0.jpg",
+      "assets/web/614810_0.jpg",
+      "assets/web/614812_0.jpg",
+      "assets/web/614813_0.jpg",
+      "assets/web/614814_0.jpg",
+      "assets/web/614815_0.jpg",
+      "assets/web/614816_0.jpg",
+      "assets/web/614817_0.jpg",
+      "assets/web/614818_0.jpg",
+      "assets/web/614819_0.jpg",
+      "assets/web/614820_0.jpg",
+      "assets/web/614821_0.jpg",
+      "assets/web/614822_0.jpg",
+      "assets/web/614823_0.jpg",
+      "assets/web/614824_0.jpg",
+      "assets/web/614825_0.jpg",
+      "assets/web/614826_0.jpg",
+      "assets/web/614827_0.jpg",
+      "assets/web/614828_0.jpg",
+      "assets/web/614829_0.jpg",
+      "assets/web/614830_0.jpg",
+      "assets/web/614831_0.jpg",
+      "assets/web/614832_0.jpg",
+      "assets/web/614833_0.jpg",
+      "assets/web/614834_0.jpg"
     ]'
         >
           <img
             class="cover slide is-active"
-            src="assets/614814_0.jpg"
+            src="assets/web/614814_0.jpg"
             alt="ผลงานจาก ANP Performance"
             loading="lazy"
             width="1621"
@@ -689,7 +769,7 @@
           <article class="svc-card" data-aos="fade-up">
             <img
               class="svc-img"
-              src="assets/614815_0.jpg"
+              src="assets/web/614815_0.jpg"
               alt="ห้องเครื่อง Audi RS4 บนไดโน่"
               loading="lazy"
               width="1427"
@@ -712,7 +792,7 @@
           <article class="svc-card" data-aos="fade-up" data-aos-delay="50">
             <img
               class="svc-img"
-              src="assets/614823_0.jpg"
+              src="assets/web/614823_0.jpg"
               alt="VW Scirocco บนไดโน่"
               loading="lazy"
               width="1108"
@@ -726,7 +806,8 @@
                   <span class="svc-num">02</span>Custom Tune ECU &amp; TCU
                 </h3>
                 <p>
-                  ปรับจูน ECU และ TCU แบบ Custom ให้เหมาะกับรถและการใช้งานของคุณ
+                  ปรับจูน ECU และ TCU แบบ Custom ให้เหมาะสมกับคุณภาพน้ำมัน
+                  และอากาศของประเทศไทย
                 </p>
                 <a href="#contact" class="btn btn-red btn-sm"
                   >สอบถาม Custom Tune →</a
@@ -737,7 +818,7 @@
           <article class="svc-card" data-aos="fade-up" data-aos-delay="100">
             <img
               class="svc-img"
-              src="assets/614821_0.jpg"
+              src="assets/web/614821_0.jpg"
               alt="เปลี่ยนถ่ายน้ำมันเครื่อง Audi A5"
               loading="lazy"
               width="1108"
@@ -751,7 +832,9 @@
                   <span class="svc-num">03</span>Service &amp; Maintenance
                 </h3>
                 <p>
-                  เซอร์วิสและซ่อมบำรุงครบวงจร ถ่ายของเหลวตามระยะและมาตรฐานโรงงาน
+                  เซอร์วิส เเละซ่อมบำรุงครบวงจร
+                  ให้บริการถ่ายของเหลวตามระยะโดยใช้น้ำมันเครื่องเกรดท็อประดับโลก
+                  เช่น Torco USA และ Amsoil USA
                 </p>
                 <a href="#contact" class="btn btn-red btn-sm"
                   >นัดหมาย Service →</a
@@ -762,7 +845,7 @@
           <article class="svc-card" data-aos="fade-up">
             <img
               class="svc-img"
-              src="assets/614831_0.jpg"
+              src="assets/web/614831_0.jpg"
               alt="ช่างกำลังตรวจเช็ก VW Polo"
               loading="lazy"
               width="1562"
@@ -790,7 +873,7 @@
           <article class="svc-card" data-aos="fade-up" data-aos-delay="50">
             <img
               class="svc-img"
-              src="assets/614830_0.jpg"
+              src="assets/web/614830_0.jpg"
               alt="ท่อไอเสีย Audi RS6"
               loading="lazy"
               width="1465"
@@ -813,7 +896,7 @@
           <div class="promo" data-aos="zoom-in" data-aos-delay="100">
             <img
               class="cover"
-              src="assets/614833_0.jpg"
+              src="assets/web/614833_0.jpg"
               alt="Mercedes-AMG C63 ด้านหลัง"
               loading="lazy"
               width="1478"
@@ -837,7 +920,7 @@
       <div class="tune-media">
         <img
           class="cover"
-          src="assets/614812_0.jpg"
+          src="assets/web/614812_0.jpg"
           alt="Audi TT บนไดโน่ระหว่างจูน"
           loading="lazy"
           width="1521"
@@ -900,7 +983,7 @@
         <div class="tuning-grid">
           <div class="tcard" data-aos="fade-up">
             <img
-              src="assets/614810_0.jpg"
+              src="assets/web/614810_0.jpg"
               alt="ห้องเครื่อง Audi A5"
               loading="lazy"
               width="1357"
@@ -914,7 +997,7 @@
           </div>
           <div class="tcard" data-aos="fade-up" data-aos-delay="50">
             <img
-              src="assets/614816_0.jpg"
+              src="assets/web/custom-tune.jpg"
               alt="Audi TT RS ในห้องจูน"
               loading="lazy"
               width="1419"
@@ -927,45 +1010,34 @@
             </div>
           </div>
           <div class="tcard" data-aos="fade-up" data-aos-delay="100">
-            <img
-              src="assets/614822_0.jpg"
-              alt="ห้องเครื่อง Audi TT RS"
-              loading="lazy"
-              width="1280"
-              height="1280"
-              decoding="async"
-            />
+            <!-- Random photo loop: every image in assets/parts/ (see script.js) -->
+            <div
+              class="tcard-media js-slideshow"
+              data-interval="3000"
+              data-images='[
+          "assets/web/parts/621301_0.jpg",
+          "assets/web/parts/621305_0.jpg",
+          "assets/web/parts/621307_0.jpg",
+          "assets/web/parts/621319.jpg",
+          "assets/web/parts/621368_0.jpg",
+          "assets/web/parts/621369_0.jpg"
+        ]'
+            >
+              <img
+                class="cover slide is-active"
+                src="assets/web/parts/621307_0.jpg"
+                alt="Performance Parts จาก ANP Performance"
+                loading="lazy"
+                width="1080"
+                height="1080"
+                decoding="async"
+              />
+              <img class="cover slide" alt="" aria-hidden="true" />
+              <div class="speed-lines" aria-hidden="true"></div>
+            </div>
             <div class="tcard-body">
               <div class="tcard-title">Performance Parts</div>
               <div class="tcard-desc">ของแต่งคุณภาพระดับโลก</div>
-            </div>
-          </div>
-          <div class="tcard" data-aos="fade-up" data-aos-delay="150">
-            <img
-              src="assets/614826_0.jpg"
-              alt="Audi TT RS สีแดง"
-              loading="lazy"
-              width="1404"
-              height="1053"
-              decoding="async"
-            />
-            <div class="tcard-body">
-              <div class="tcard-title">Upgrade Brake</div>
-              <div class="tcard-desc">เบรกมั่นใจ ทุกความเร็ว</div>
-            </div>
-          </div>
-          <div class="tcard" data-aos="fade-up" data-aos-delay="200">
-            <img
-              src="assets/614820_0.jpg"
-              alt="BMW M4"
-              loading="lazy"
-              width="1397"
-              height="1171"
-              decoding="async"
-            />
-            <div class="tcard-body">
-              <div class="tcard-title">Suspension</div>
-              <div class="tcard-desc">ช่วงล่างเฉียบ ควบคุมดีขึ้น</div>
             </div>
           </div>
         </div>
@@ -978,7 +1050,7 @@
         <div class="euro-media">
           <img
             class="cover"
-            src="assets/614813_0.jpg"
+            src="assets/web/614813_0.jpg"
             alt="Audi R8 และรถยุโรปหลายแบรนด์"
             loading="lazy"
             width="1079"
@@ -1046,36 +1118,33 @@
           <div class="gallery">
             <figure class="gallery-item" data-aos="zoom-in">
               <img
-                src="assets/611733_0.jpg"
-                alt="Audi A5 สีดำบนไดโน่"
+                src="assets/web/portfolio/34646_0.jpg"
+                alt="Audi TT ทีม ANP Performance ในสนามแข่ง"
                 loading="lazy"
-                width="1504"
-                height="1089"
+                width="1478"
+                height="1108"
                 decoding="async"
               />
-              <figcaption>Performance Modification</figcaption>
             </figure>
             <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="50">
               <img
-                src="assets/611734_0.jpg"
-                alt="Audi A5 สีดำด้านข้าง"
-                loading="lazy"
-                width="1546"
-                height="1058"
-                decoding="async"
-              />
-              <figcaption>Custom Tune</figcaption>
-            </figure>
-            <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="50">
-              <img
-                src="assets/614819_0.jpg"
-                alt="Audi TT ระหว่างติดตั้งชุดแต่ง"
+                src="assets/web/portfolio/34644_0.jpg"
+                alt="BMW M3 สีเทา ในอู่ ANP Performance"
                 loading="lazy"
                 width="1397"
                 height="1171"
                 decoding="async"
               />
-              <figcaption>Body Kit</figcaption>
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="50">
+              <img
+                src="assets/web/portfolio/34649_0.jpg"
+                alt="ห้องเครื่อง Audi TT RS พร้อมชุดอินเทคคาร์บอน"
+                loading="lazy"
+                width="1477"
+                height="1108"
+                decoding="async"
+              />
             </figure>
             <figure
               class="gallery-item"
@@ -1083,47 +1152,173 @@
               data-aos-delay="100"
             >
               <img
-                src="assets/614828_0.jpg"
-                alt="ห้องเครื่อง VW Scirocco"
-                loading="lazy"
-                width="1080"
-                height="1350"
-                decoding="async"
-              />
-              <figcaption>Engine Bay</figcaption>
-            </figure>
-            <figure class="gallery-item" data-aos="zoom-in">
-              <img
-                src="assets/614827_0.jpg"
-                alt="Service VW Scirocco"
-                loading="lazy"
-                width="1080"
-                height="1350"
-                decoding="async"
-              />
-              <figcaption>Service</figcaption>
-            </figure>
-            <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="50">
-              <img
-                src="assets/614825_0.jpg"
-                alt="Audi TT RS"
+                src="assets/web/portfolio/34645_0.jpg"
+                alt="VW Scirocco R บนไดโน่"
                 loading="lazy"
                 width="1108"
                 height="1477"
                 decoding="async"
               />
-              <figcaption>Audi TT RS</figcaption>
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in">
+              <img
+                src="assets/web/portfolio/34647_0.jpg"
+                alt="Service Audi TT MK3"
+                loading="lazy"
+                width="1080"
+                height="1350"
+                decoding="async"
+              />
             </figure>
             <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="50">
               <img
-                src="assets/614832_0.jpg"
-                alt="รถลูกค้า ANP Performance"
+                src="assets/web/portfolio/34643_0.jpg"
+                alt="Audi TT RS ระหว่างติดตั้งอินเทค"
                 loading="lazy"
-                width="1478"
+                width="1397"
+                height="1171"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="50">
+              <img
+                src="assets/web/portfolio/34648_0.jpg"
+                alt="Audi TT RS สีแดง ระหว่างเซอร์วิส"
+                loading="lazy"
+                width="1404"
+                height="1053"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+              <img
+                src="assets/web/portfolio/34652_0.jpg"
+                alt="Audi TT RS สีแดง บนไดโน่"
+                loading="lazy"
+                width="1514"
+                height="1081"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in">
+              <img
+                src="assets/web/portfolio/34650_0.jpg"
+                alt="Mercedes-Benz C-Class เปลี่ยนคอยล์จุดระเบิด"
+                loading="lazy"
+                width="1108"
+                height="1477"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="50">
+              <img
+                src="assets/web/portfolio/34653_0.jpg"
+                alt="Audi R8 บนไดโน่"
+                loading="lazy"
+                width="1477"
                 height="1108"
                 decoding="async"
               />
-              <figcaption>Customer Cars</figcaption>
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+              <img
+                src="assets/web/portfolio/34656_0.jpg"
+                alt="เปลี่ยนน้ำมันเกียร์ ATF รถบนลิฟต์"
+                loading="lazy"
+                width="1396"
+                height="1173"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in">
+              <img
+                src="assets/web/portfolio/34654_0.jpg"
+                alt="ห้องเครื่อง Audi TT RS สีแดง ในห้องจูน"
+                loading="lazy"
+                width="1419"
+                height="1154"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="50">
+              <img
+                src="assets/web/portfolio/34651_0.jpg"
+                alt="Audi A5 สีขาว ชุดแต่งรอบคัน"
+                loading="lazy"
+                width="1397"
+                height="1171"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+              <img
+                src="assets/web/portfolio/34658_0.jpg"
+                alt="Audi RS4 Avant บนไดโน่"
+                loading="lazy"
+                width="1621"
+                height="1009"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in">
+              <img
+                src="assets/web/portfolio/34659_0.jpg"
+                alt="น้ำมันเครื่องและอะไหล่เซอร์วิส Audi"
+                loading="lazy"
+                width="1477"
+                height="1108"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="50">
+              <img
+                src="assets/web/portfolio/34655_0.jpg"
+                alt="Audi RS สีเทา บนไดโน่"
+                loading="lazy"
+                width="1427"
+                height="1147"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+              <img
+                src="assets/web/portfolio/34657_0.jpg"
+                alt="น้ำมันเกียร์ Torco ATF เตรียมเซอร์วิส"
+                loading="lazy"
+                width="1752"
+                height="934"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in">
+              <img
+                src="assets/web/portfolio/34662_0.jpg"
+                alt="Audi TT สีขาว เครื่องโมดิฟาย บนไดโน่"
+                loading="lazy"
+                width="1451"
+                height="1127"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="50">
+              <img
+                src="assets/web/portfolio/34660_0.jpg"
+                alt="ชุดน้ำมันเซอร์วิส Audi"
+                loading="lazy"
+                width="1562"
+                height="1048"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+              <img
+                src="assets/web/portfolio/34661_0.jpg"
+                alt="Audi บนลิฟต์ พร้อมอุปกรณ์เซอร์วิส"
+                loading="lazy"
+                width="1504"
+                height="1089"
+                decoding="async"
+              />
             </figure>
           </div>
         </div>
@@ -1142,7 +1337,7 @@
           </div>
           <img
             class="review-img"
-            src="assets/614818_0.jpg"
+            src="assets/web/614818_0.jpg"
             alt="รถลูกค้า Audi A5"
             loading="lazy"
             width="1397"
@@ -1234,8 +1429,7 @@
             </summary>
             <p>
               ANP Performance เชี่ยวชาญรถยุโรปโดยเฉพาะ ได้แก่ Audi, Volkswagen,
-              Mercedes-Benz, BMW และ Lamborghini รวมถึงรองรับ Nissan
-              GT-R (R35)
+              Mercedes-Benz, BMW และ Lamborghini รวมถึงรองรับ Nissan GT-R (R35)
             </p>
           </details>
           <details class="faq-item" data-aos="fade-up" data-aos-delay="50">
@@ -1298,6 +1492,34 @@
           </details>
           <details class="faq-item" data-aos="fade-up" data-aos-delay="200">
             <summary>
+              ANP Performance มีของแต่ง Performance Parts อะไรบ้าง?<span
+                class="ms"
+                aria-hidden="true"
+                >add</span
+              >
+            </summary>
+            <p>
+              มีของแต่งแบรนด์ ANP Performance เช่น เทอร์โบ (Turbo),
+              ชุดอินเทคคาร์บอน (Carbon Intake) และคอยล์จุดระเบิด (Ignition Coil)
+              รวมถึงชุด Oil Catch Can และจัดหาอะไหล่ Performance
+              จากต่างประเทศตามรุ่นรถ
+            </p>
+          </details>
+          <details class="faq-item" data-aos="fade-up" data-aos-delay="200">
+            <summary>
+              มีผลงานจริงให้ดูไหม?<span class="ms" aria-hidden="true"
+                >add</span
+              >
+            </summary>
+            <p>
+              มี ดูได้ที่ส่วน “ผลงานจาก ANP Performance” บนหน้านี้ ตัวอย่างเช่น
+              Audi TT RS, Audi R8, Audi RS4 Avant, BMW M3, VW Scirocco R และ
+              Mercedes-Benz C-Class ทั้งงานจูนบนไดโน่ งานติดตั้งของแต่ง
+              และงานเซอร์วิส
+            </p>
+          </details>
+          <details class="faq-item" data-aos="fade-up" data-aos-delay="200">
+            <summary>
               ติดต่อหรือจองคิวกับ ANP Performance ได้อย่างไร?<span
                 class="ms"
                 aria-hidden="true"
@@ -1319,7 +1541,7 @@
       <div class="contact-media">
         <img
           class="cover"
-          src="assets/614824_0.jpg"
+          src="assets/web/614824_0.jpg"
           alt=""
           loading="lazy"
           width="1108"
@@ -1332,7 +1554,8 @@
         <div class="contact-cta" data-aos="race-right">
           <h2>พร้อมยกระดับรถยุโรปของคุณ<br /><span>ติดต่อเลยวันนี้</span></h2>
           <a href="tel:0614422242" class="btn btn-red"
-            ><span class="ms">call</span>แต่งรถยุโรป <br>โทรเลย 061-442-2242</a
+            ><span class="ms">call</span>แต่งรถยุโรป <br />โทรเลย
+            061-442-2242</a
           >
           <a
             href="https://lin.ee/WOJdv9m"
@@ -1553,7 +1776,7 @@
         <div class="footer-strip">
           <a href="#top" class="logo" aria-label="ANP Performance"
             ><img
-              src="assets/img/logo-t.png"
+              src="assets/img/logo-t-168.png"
               alt=""
               class="logo-img"
               width="480"
@@ -1657,44 +1880,38 @@
       </div>
     </footer>
 
-    <!-- LIGHTBOX: all work photos (full size in assets/, thumbnails in assets/img/thumbs/) -->
+    <!-- LIGHTBOX: all portfolio photos (full size in assets/portfolio/, thumbnails in assets/img/thumbs/portfolio/) -->
     <dialog
       id="lightbox"
       class="lightbox"
       aria-label="แกลเลอรีผลงาน ANP Performance"
-      data-base="assets/"
-      data-thumbs="assets/img/thumbs/"
+      data-base="assets/portfolio/"
+      data-thumbs="assets/img/thumbs/portfolio/"
       data-images='[
-    "611733_0.jpg",
-    "611734_0.jpg",
-    "614810_0.jpg",
-    "614812_0.jpg",
-    "614813_0.jpg",
-    "614814_0.jpg",
-    "614815_0.jpg",
-    "614816_0.jpg",
-    "614817_0.jpg",
-    "614818_0.jpg",
-    "614819_0.jpg",
-    "614820_0.jpg",
-    "614821_0.jpg",
-    "614822_0.jpg",
-    "614823_0.jpg",
-    "614824_0.jpg",
-    "614825_0.jpg",
-    "614826_0.jpg",
-    "614827_0.jpg",
-    "614828_0.jpg",
-    "614829_0.jpg",
-    "614830_0.jpg",
-    "614831_0.jpg",
-    "614832_0.jpg",
-    "614833_0.jpg",
-    "614834_0.jpg"
+    "34643_0.jpg",
+    "34644_0.jpg",
+    "34645_0.jpg",
+    "34646_0.jpg",
+    "34647_0.jpg",
+    "34648_0.jpg",
+    "34649_0.jpg",
+    "34650_0.jpg",
+    "34651_0.jpg",
+    "34652_0.jpg",
+    "34653_0.jpg",
+    "34654_0.jpg",
+    "34655_0.jpg",
+    "34656_0.jpg",
+    "34657_0.jpg",
+    "34658_0.jpg",
+    "34659_0.jpg",
+    "34660_0.jpg",
+    "34661_0.jpg",
+    "34662_0.jpg"
   ]'
     >
       <div class="lb-top">
-        <span class="lb-count" aria-live="polite">1 / 26</span>
+        <span class="lb-count" aria-live="polite">1 / 20</span>
         <button type="button" class="lb-btn lb-close" aria-label="ปิด">
           <span class="ms">close</span>
         </button>
@@ -1727,7 +1944,9 @@
           class="sticky-call"
           aria-label="โทร 061-442-2242"
           ><span class="ms" aria-hidden="true">call</span
-          ><span class="sticky-txt"><b>คุยกับเราเลย</b><small>061-442-2242</small></span></a
+          ><span class="sticky-txt"
+            ><b>คุยกับเราเลย</b><small>061-442-2242</small></span
+          ></a
         >
         <a
           href="https://lin.ee/WOJdv9m"
@@ -1735,7 +1954,9 @@
           target="_blank"
           rel="noopener"
           ><span class="si si-line" aria-hidden="true"></span
-          ><span class="sticky-txt"><b>แอดไลน์</b><small>ส่งรูปรถมาดูได้</small></span></a
+          ><span class="sticky-txt"
+            ><b>แอดไลน์</b><small>ส่งรูปรถมาดูได้</small></span
+          ></a
         >
         <a
           href="https://www.youtube.com/@ANPPerformance42"
@@ -1754,6 +1975,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/script.js?v=2" defer></script>
   </body>
 </html>

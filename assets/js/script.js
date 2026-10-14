@@ -61,6 +61,11 @@
     var active = 0;      // index into players
     var started = false;
     var inView = true;
+    // Clips are several MB: wait until the page (poster, fonts, CSS) has loaded so they don't
+    // compete with first paint, and keep just the poster on Save-Data / 2G connections.
+    var pageReady = false;
+    var conn = navigator.connection;
+    var liteMode = !!(conn && (conn.saveData || /2g/.test(conn.effectiveType || '')));
 
     var pool = function () {
       if (playlistEl.dataset.mode !== 'match') return clips;
@@ -120,7 +125,7 @@
     });
 
     var start = function () {
-      if (started || !clips.length || motionOff.matches) return;
+      if (started || !pageReady || liteMode || !clips.length || motionOff.matches) return;
       if (!playlistEl.getClientRects().length || getComputedStyle(playlistEl).display === 'none') return;
       started = true;
       var first = players[active];
@@ -142,6 +147,12 @@
       start();
     }
     window.addEventListener('resize', start);
+
+    var onReady = function () {
+      setTimeout(function () { pageReady = true; if (inView) start(); }, 800);
+    };
+    if (document.readyState === 'complete') onReady();
+    else window.addEventListener('load', onReady, { once: true });
   }
 
   /* ---------- Random photo slideshow ---------- */
@@ -259,7 +270,7 @@
   }
 
   /* ---------- Gallery lightbox ---------- */
-  // Clicking a work photo opens <dialog id="lightbox"> with every image in assets/,
+  // Clicking a work photo opens <dialog id="lightbox"> with every image in assets/portfolio/,
   // starting at the clicked one. Arrows / keyboard / swipe / thumbnails to navigate.
   var lb = document.getElementById('lightbox');
   if (lb && typeof lb.showModal === 'function') {
@@ -395,9 +406,9 @@
 
   /* ---------- Reviews carousel ---------- */
   var reviews = [
-    { q: 'ทีมงานให้คำปรึกษาดีมาก งานละเอียด รถวิ่งดีขึ้นชัดเจน ประทับใจสุดๆ ครับ', name: 'คุณ ก.', init: 'ก', car: 'Audi A5', img: 'assets/614818_0.jpg' },
-    { q: 'จูน TCU แล้วเกียร์ตอบสนองไวขึ้นมาก อธิบายทุกขั้นตอนก่อนเริ่มงาน', name: 'คุณ ภ.', init: 'ภ', car: 'BMW M4', img: 'assets/614820_0.jpg' },
-    { q: 'เช็กอาการด้วยเครื่องมือตรงรุ่น เจอปัญหาจริงตั้งแต่ครั้งแรก', name: 'คุณ ธ.', init: 'ธ', car: 'Mercedes-AMG C63', img: 'assets/614834_0.jpg' }
+    { q: 'ทีมงานให้คำปรึกษาดีมาก งานละเอียด รถวิ่งดีขึ้นชัดเจน ประทับใจสุดๆ ครับ', name: 'คุณ ก.', init: 'ก', car: 'Audi A5', img: 'assets/web/614818_0.jpg' },
+    { q: 'จูน TCU แล้วเกียร์ตอบสนองไวขึ้นมาก อธิบายทุกขั้นตอนก่อนเริ่มงาน', name: 'คุณ ภ.', init: 'ภ', car: 'BMW M4', img: 'assets/web/614820_0.jpg' },
+    { q: 'เช็กอาการด้วยเครื่องมือตรงรุ่น เจอปัญหาจริงตั้งแต่ครั้งแรก', name: 'คุณ ธ.', init: 'ธ', car: 'Mercedes-AMG C63', img: 'assets/web/614834_0.jpg' }
   ];
 
   var card = document.getElementById('reviews');
