@@ -456,6 +456,7 @@ input::placeholder, textarea::placeholder { color: #9a9ca1; }
 }
 .svc-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0, 0, 0, .12); }
 .svc-img { height: 190px; width: 100%; object-fit: cover; }
+.svc-card:nth-child(2) .svc-img { object-fit: contain; }
 .svc-body { padding: 18px 20px 22px; display: flex; gap: 14px; flex: 1; }
 .icon-circle {
   flex: none;
@@ -1235,7 +1236,6 @@ textarea.field { resize: vertical; }
 .sticky-txt { display: flex; flex-direction: column; min-width: 0; line-height: 1.15; }
 .sticky-txt b { font-weight: 600; }
 .sticky-txt small { font: 400 11px var(--font-body); opacity: .85; overflow: hidden; text-overflow: ellipsis; }
-}
 
 
 /* =========================================================
@@ -1251,8 +1251,8 @@ textarea.field { resize: vertical; }
   .works-grid { grid-template-columns: 1fr; }
   .gallery { grid-template-columns: repeat(4, 1fr); }
   .gallery-item:first-child { grid-column: span 2; }
-  /* the wide first photo leaves one orphan at the end: stretch it across the row */
-  .gallery-item:last-child { grid-column: 1 / -1; }
+  /* 17 photos + the wide first one = 18 cells: the last photo spans 3 to close the final row */
+  .gallery-item:last-child { grid-column: span 3; }
   .review-card { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; align-items: start; }
   .review-img { grid-column: 2; grid-row: 1 / 5; height: 100%; min-height: 220px; }
 }
@@ -1392,6 +1392,7 @@ textarea.field { resize: vertical; }
   .gallery { grid-template-columns: 1fr 1fr; }
   .gallery-item { height: 140px; }
   .gallery-item:first-child { grid-column: 1 / -1; height: 200px; }
+  .gallery-item:last-child { grid-column: auto; }
   .review-card { display: flex; padding: 20px; }
   .review-img { height: 180px; min-height: 0; }
 

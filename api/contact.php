@@ -124,7 +124,7 @@ if ($fh && flock($fh, LOCK_EX)) {
 // ---------- validate ----------
 $brands = ['Audi', 'Volkswagen', 'Mercedes-Benz', 'BMW', 'Lamborghini', 'Nissan GT-R', 'อื่นๆ'];
 $years  = ['2024–2026', '2019–2023', '2014–2018', 'ก่อน 2014'];
-$needsAllowed = ['Stage / Performance', 'ECU Tune', 'TCU Tune', 'Diagnostic', 'Service', 'Performance Parts', 'อื่นๆ'];
+$needsAllowed = ['Modify + Tune Stage 1', 'Modify + Tune Stage 2', 'Modify + Tune Stage 3', 'Modify + Tune Stage 4', 'Oil Service + Maintenance', 'Stage / Performance', 'ECU Tune', 'TCU Tune', 'Diagnostic', 'Service', 'Performance Parts', 'อื่นๆ'];
 
 $name   = clean($_POST['name'] ?? '', 80);
 $phone  = clean($_POST['phone'] ?? '', 20);

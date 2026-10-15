@@ -31,7 +31,7 @@ const RATE_LIMIT = { max: 5, windowSeconds: 600 };
 
 const BRANDS = ['Audi', 'Volkswagen', 'Mercedes-Benz', 'BMW', 'Lamborghini', 'Nissan GT-R', 'อื่นๆ'];
 const YEARS = ['2024–2026', '2019–2023', '2014–2018', 'ก่อน 2014'];
-const NEEDS = ['Stage / Performance', 'ECU Tune', 'TCU Tune', 'Diagnostic', 'Service', 'Performance Parts', 'อื่นๆ'];
+const NEEDS = ['Modify + Tune Stage 1', 'Modify + Tune Stage 2', 'Modify + Tune Stage 3', 'Modify + Tune Stage 4', 'Oil Service + Maintenance', 'Stage / Performance', 'ECU Tune', 'TCU Tune', 'Diagnostic', 'Service', 'Performance Parts', 'อื่นๆ'];
 const THAI_MONTHS = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'];
 
 function respond(request, status, data) {
