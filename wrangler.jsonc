@@ -1,0 +1,18 @@
+// Cloudflare Workers deploy: `npx wrangler deploy` runs scripts/build.sh, then uploads dist/ only
+// (the repo root holds files over the 25 MiB asset limit, e.g. the original hero videos).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "anpperformance",
+  "main": "worker.js",
+  "compatibility_date": "2025-09-01",
+  "build": {
+    "command": "bash scripts/build.sh"
+  },
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page"
+  },
+  // keep LINE_TO / LINE_MOCK / ALLOWED_ORIGINS set in the dashboard (secrets are always kept)
+  "keep_vars": true
+}
